@@ -10,3 +10,5 @@ $UNINSTALL_COMMAND=(($RESULT.UninstallString -split '\"')[1])
 $UNINSTALL_ARGS=(($RESULT.UninstallString -split '\"')[2]) + ' /S'
 Start-Process $UNINSTALL_COMMAND -ArgumentList $UNINSTALL_ARGS -Wait
 }
+
+#Reference https://techexpert.tips/category/powershell/
